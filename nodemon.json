@@ -1,0 +1,5 @@
+{
+  "verbose": true,
+  "ext": "coffee,pug,js,json",
+  "exec": "npm run start"
+}

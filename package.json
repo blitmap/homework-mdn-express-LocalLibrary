@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "./bin/www",
-    "devstart": "DEBUG=mdn-express-locallibrary:* nodemon -e js,coffee,litcoffee --exec bin/www"
+    "devstart": "DEBUG=mdn-express-locallibrary:* nodemon --exec 'npm run start'"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
