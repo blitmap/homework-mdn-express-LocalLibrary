@@ -33,7 +33,7 @@ app.use (err, req, res, next) ->
 	res.locals.error   = err if req.app.get('env') is 'development'
 
 	# rendor the error page
-	res.status err.status or 500
+	res.status err.status ? 500
 	res.render 'error'
 
 module.exports = app

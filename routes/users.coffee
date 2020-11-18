@@ -3,7 +3,10 @@
 users = Router()
 
 # GET users listing.
-users.get '/', (req, res) ->
+users.get '/', (_, res) ->
 	res.send 'respond with a resource'
+
+users.get '/cool', (_, res) ->
+	res.send "You're so cool!"
 
 module.exports = users
